@@ -1318,7 +1318,7 @@ footer {
 .question_list li.focus{
   border: 1px solid #fff;
 
-  >a::before{
+  .title::before{
     background: url(../../icons/remove.png) no-repeat;
     background-size: 100%;
   }

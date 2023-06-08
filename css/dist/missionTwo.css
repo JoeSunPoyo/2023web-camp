@@ -1213,7 +1213,7 @@ footer:has(.question_list) {
 .question_list li.focus {
   border: 1px solid #fff;
 }
-.question_list li.focus > a::before {
+.question_list li.focus .title::before {
   background: url(../../icons/remove.png) no-repeat;
   background-size: 100%;
 }
