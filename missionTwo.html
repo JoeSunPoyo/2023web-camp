@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/dist/missionTwo.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>missionTwo</title>
+  </head>
+  <body>
+    <nav id="nav">
+      <img src="imgs/logo.png" />
+      <div class="nav_link_box">
+        <div class="box">
+          <a href="javascript:;" class="nav_link" onclick="mainPage(false)"
+            >首頁</a
+          ><a href="javascript:;" class="nav_link" onclick="mainPage(true)"
+            >定價</a
+          >
+        </div>
+        <div class="footer_link_box">
+          <div class="page_link">
+            <p>AI工具王 © 2023</p>
+            <a href="javascript:;">Facebook</a><a href="javascript:;">Twitter</a
+            ><a href="javascript:;">Instagram</a>
+          </div>
+        </div>
+      </div>
+      <a href="javascript:;" class="hamburger" onclick="navEvent()"></a>
+    </nav>
+    <section class="information">
+      <h1 class="price_hidden">
+        透過<br />AI 工具王的<br />強大模型<br />讓您的業務更聰明
+      </h1>
+      <h1 class="price_show">
+        用多少，<br />
+        付多少。
+      </h1>
+      <button class="btn price_hidden">開始使用</button>
+      <h2 class="price_show">
+        我們相信，最靈活的取用機制，才能最大化的幫助你業務的推動。
+      </h2>
+      <div class="kusa_box">
+        <div class="kusa">
+          <img src="imgs/deco.png" /><img src="imgs/deco.png" />
+        </div>
+        <div class="kusa">
+          <img src="imgs/deco.png" /><img src="imgs/deco.png" />
+        </div>
+        <div class="kusa">
+          <img src="imgs/deco.png" /><img src="imgs/deco.png" />
+        </div>
+      </div>
+      <div class="price_area price_show">
+        <p class="information_title">定價</p>
+        <ul class="price_box">
+          <li>
+            <div class="info">
+              <p>琪琪</p>
+              <ul>
+                <li>初級</li>
+                <li>速度最快</li>
+              </ul>
+            </div>
+            <div class="fun">
+              <p>NT$5<b>／1k tokens</b></p>
+              <a href="javascript:;" class="link">
+                開始使用
+                <img src="icons/call made.png" />
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="info">
+              <p>昊昊</p>
+              <ul>
+                <li>中級</li>
+              </ul>
+            </div>
+            <div class="fun">
+              <p>NT$5<b>／1k tokens</b></p>
+              <a href="javascript:;" class="link">
+                開始使用
+                <img src="icons/call made.png" />
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="info">
+              <p>卡卡</p>
+              <ul>
+                <li>高級</li>
+              </ul>
+            </div>
+            <div class="fun">
+              <p>NT$5<b>／1k tokens</b></p>
+              <a href="javascript:;" class="link">
+                開始使用
+                <img src="icons/call made.png" />
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="info">
+              <p>杰杰</p>
+              <ul>
+                <li>最高級</li>
+                <li>資訊最完善</li>
+              </ul>
+            </div>
+            <div class="fun">
+              <p>NT$5<b>／1k tokens</b></p>
+              <a href="javascript:;" class="link">
+                開始使用
+                <img src="icons/call made.png" />
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="moses_area price_show flex">
+        <p class="information_title">使用規範</p>
+        <ul class="information_list">
+          <li>
+            <p class="title">守法</p>
+            <p class="content">
+              請遵守相關的法規和政策，不得進行任何違法違規的活動。
+            </p>
+          </li>
+          <li>
+            <p class="title">資訊安全</p>
+            <p class="content">
+              請務必保護好自己的帳號和密碼，不得將其透露給他人。
+            </p>
+          </li>
+          <li>
+            <p class="title">守密</p>
+            <p class="content">
+              需對使用過程中產生的數據負責，不得擅自泄露數據。
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div class="moses_area price_hidden">
+        <p class="information_title">我們的服務</p>
+        <p class="information_content">
+          我們相信透過 AI 技術，
+          包括圖像識別、自然語言處理和機器翻譯等，讓您更快、更準確地做出決策。
+        </p>
+      </div>
+      <ul class="information_card_box price_hidden">
+        <li class="information_card">
+          <img src="icons/flash on.png" />
+          <p class="title">快速</p>
+          <p class="text">
+            我們先進的推理基礎設施提供了極短的響應時間，讓你的產品服務不間斷。
+          </p>
+        </li>
+        <li class="information_card">
+          <img src="icons/auto awesome.png" />
+          <p class="title">靈活</p>
+          <p class="text">
+            我們的服務可以根據您的需求進行靈活調整，同時還可以滿足不同項目和預算的需求。
+          </p>
+        </li>
+        <li class="information_card">
+          <img src="icons/library add.png" />
+          <p class="title">擴充</p>
+          <p class="text">
+            我們的服務支持多種擴充選項，可以滿足您的不斷增長的 AI 需求。
+          </p>
+        </li>
+      </ul>
+      <div class="company_box price_hidden">
+        <p class="information_title">來自合作夥伴</p>
+        <div class="icons">
+          <img src="imgs/enterprise.png" />
+          <img src="imgs/enterprise1.png" />
+          <img src="imgs/enterprise2.png" />
+          <img src="imgs/enterprise3.png" />
+          <img src="imgs/enterprise4.png" />
+          <img src="imgs/enterprise5.png" />
+          <img src="imgs/enterprise6.png" />
+        </div>
+        <div class="icons">
+          <img src="imgs/enterprise7.png" />
+          <img src="imgs/enterprise8.png" />
+          <img src="imgs/enterprise9.png" />
+          <img src="imgs/enterprise11.png" />
+          <img src="imgs/enterprise12.png" />
+          <img src="imgs/enterprise.png" />
+          <img src="imgs/enterprise1.png" />
+        </div>
+      </div>
+      <ul class="information_card_box price_hidden">
+        <li class="information_card">
+          <div class="information_comment_box">
+            <div class="star">
+              <img src="icons/star.png" />
+              <img src="icons/star.png" />
+              <img src="icons/star.png" />
+              <img src="icons/star.png" />
+              <img src="icons/star.png" />
+            </div>
+            <p class="text">
+              非常喜歡 AI工具王 提供的 AI
+              模型租賃服務，使用起來非常方便，而且效果非常好。對於我們公司的業務來說，這個服務非常重要，因為我們需要大量的數據進行分析和預測，AI工具王
+              提供的 AI 模型能夠幫助我們節省大量時間和成本，實在是太棒了！
+            </p>
+          </div>
+          <div class="person_box">
+            <img src="imgs/avatar3.png" />
+            <p class="person_info">
+              <b class="name">陳小姐</b
+              ><b class="person_company">ABC科技有限公司</b>
+            </p>
+          </div>
+        </li>
+        <li class="information_card">
+          <div class="information_comment_box">
+            <div class="star">
+              <img src="icons/star.png" />
+              <img src="icons/star.png" />
+              <img src="icons/star.png" />
+              <img src="icons/star.png" />
+              <img src="icons/star.png" />
+            </div>
+            <p class="text">
+              作為一家醫療器材公司，我們非常關注人工智能技術的應用，而 AI工具王
+              提供的 AI 模型租賃服務為我們帶來了很大的幫助。我們使用 AI工具王
+              的模型進行醫學影像分析和預測，這些模型非常精確，能夠幫助我們更好地診斷病情，提高治療效果。感謝
+              AI工具王 團隊的辛勤工作！
+            </p>
+          </div>
+          <div class="person_box">
+            <img src="imgs/avatar1.png" />
+            <p class="person_info">
+              <b class="name">劉小姐</b
+              ><b class="person_company">XYZ 醫療器材有限公司</b>
+            </p>
+          </div>
+        </li>
+        <li class="information_card">
+          <div class="information_comment_box">
+            <div class="star">
+              <img src="icons/star.png" />
+              <img src="icons/star.png" />
+              <img src="icons/star.png" />
+              <img src="icons/star.png" />
+              <img src="icons/star.png" />
+            </div>
+            <p class="text">
+              我們銀行一直在尋找能夠幫助我們提高風險控制和客戶服務的解決方案，而
+              AI工具王 提供的 AI 模型租賃服務正好滿足了我們的需求。我們使用
+              AI工具王
+              的模型進行客戶信用評估和詐騙檢測等任務，這些模型非常準確，能夠幫助我們更好地控制風險，提高客戶滿意度。非常感謝
+              AI工具王 團隊的支持！
+            </p>
+          </div>
+          <div class="person_box">
+            <img src="imgs/avatar2.png" />
+            <p class="person_info">
+              <b class="name">黃先生</b><b class="person_company">EFG 銀行</b>
+            </p>
+          </div>
+        </li>
+        <ul class="pagination">
+          <li class="focus"><a href="javascript:;"></a></li>
+          <li><a href="javascript:;"></a></li>
+          <li><a href="javascript:;"></a></li>
+        </ul>
+      </ul>
+    </section>
+    <main>
+      <h1>這些超酷的應用，<br />都來自 AI工具王</h1>
+      <div class="text_box">
+        <label class="text_main">
+          <svg
+            width="18"
+            height="18"
+            viewBox="0 0 18 18"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.5 11H11.71L11.43 10.73C12.41 9.59 13 8.11 13 6.5C13 2.91 10.09 0 6.5 0C2.91 0 0 2.91 0 6.5C0 10.09 2.91 13 6.5 13C8.11 13 9.59 12.41 10.73 11.43L11 11.71V12.5L16 17.49L17.49 16L12.5 11ZM6.5 11C4.01 11 2 8.99 2 6.5C2 4.01 4.01 2 6.5 2C8.99 2 11 4.01 11 6.5C11 8.99 8.99 11 6.5 11Z"
+              fill="#919191"
+            />
+          </svg>
+          <input type="text" placeholder="輸入關鍵字搜尋" />
+        </label>
+      </div>
+      <div class="tool_box">
+        <button class="btn sort">
+          篩選<svg
+            width="12"
+            height="12"
+            viewBox="0 0 12 12"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0.83333 1.74008C2.18 3.46675 4.66666 6.66675 4.66666 6.66675V10.6667C4.66666 11.0334 4.96666 11.3334 5.33333 11.3334H6.66666C7.03333 11.3334 7.33333 11.0334 7.33333 10.6667V6.66675C7.33333 6.66675 9.81333 3.46675 11.16 1.74008C11.5 1.30008 11.1867 0.666748 10.6333 0.666748H1.36C0.806663 0.666748 0.49333 1.30008 0.83333 1.74008Z"
+              fill="#020202"
+            />
+          </svg>
+        </button>
+        <div class="tab_box">
+          <a href="javascript:;" class="focus">全部</a
+          ><a href="javascript:;">聊天</a><a href="javascript:;">影像辨識</a
+          ><a href="javascript:;">翻譯</a><a href="javascript:;">行銷</a
+          ><a href="javascript:;">客服</a><a href="javascript:;">生產力</a>
+        </div>
+        <label class="select_main">
+          <select>
+            <option value="0">由新到舊</option>
+          </select>
+          <img src="icons/keyboard arrow down.png" />
+        </label>
+      </div>
+      <div class="main_card_box">
+        <div class="main_card">
+          <div
+            class="img_box"
+            style="background-image: url(imgs/tool1.png)"
+          ></div>
+          <ul class="main_card_list">
+            <li class="content">
+              <p class="title">Chatbot Builder</p>
+              <p class="text">
+                建立智能化的聊天機器人，解答常見問題、提供客戶支援、收集反饋等。
+              </p>
+            </li>
+            <li class="creator">
+              <p class="title">AI 模型</p>
+              <p class="person_name">卡卡</p>
+            </li>
+            <li class="type">
+              <p class="title">#聊天</p>
+              <a href="javascript:;"><img src="icons/share.png" /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="main_card">
+          <div
+            class="img_box"
+            style="background-image: url(imgs/tool2.png)"
+          ></div>
+          <ul class="main_card_list">
+            <li class="content">
+              <p class="title">Image Recognition Platform</p>
+              <p class="text">專業的圖像識別平台，識別圖像、分類、標記等。</p>
+            </li>
+            <li class="creator">
+              <p class="title">AI 模型</p>
+              <p class="person_name">杰杰</p>
+            </li>
+            <li class="type">
+              <p class="title">#影像辨識</p>
+              <a href="javascript:;"><img src="icons/share.png" /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="main_card">
+          <div
+            class="img_box"
+            style="background-image: url(imgs/tool3.png)"
+          ></div>
+          <ul class="main_card_list">
+            <li class="content">
+              <p class="title">Language Translation API</p>
+              <p class="text">
+                專業的語言翻譯 API，實現文本翻譯功能，支援多種格式的文本。
+              </p>
+            </li>
+            <li class="creator">
+              <p class="title">AI 模型</p>
+              <p class="person_name">琪琪</p>
+            </li>
+            <li class="type">
+              <p class="title">#翻譯</p>
+              <a href="javascript:;"><img src="icons/share.png" /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="main_card">
+          <div
+            class="img_box"
+            style="background-image: url(imgs/tool4.png)"
+          ></div>
+          <ul class="main_card_list">
+            <li class="content">
+              <p class="title">Sentiment Analysis API</p>
+              <p class="text">
+                自動識別文本中的情感傾向，包括正向、負向和中性等。適用於情感分析、社交媒體監控、市場調查等。
+              </p>
+            </li>
+            <li class="creator">
+              <p class="title">AI 模型</p>
+              <p class="person_name">昊昊</p>
+            </li>
+            <li class="type">
+              <p class="title">#行銷</p>
+              <a href="javascript:;"><img src="icons/share.png" /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="main_card">
+          <div
+            class="img_box"
+            style="background-image: url(imgs/tool5.png)"
+          ></div>
+          <ul class="main_card_list">
+            <li class="content">
+              <p class="title">Fraud Detection Platform</p>
+              <p class="text">預防詐騙活動，適用於銀行、金融、電商等。</p>
+            </li>
+            <li class="creator">
+              <p class="title">AI 模型</p>
+              <p class="person_name">卡卡</p>
+            </li>
+            <li class="type">
+              <p class="title">#客服</p>
+              <a href="javascript:;"><img src="icons/share.png" /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="main_card">
+          <div
+            class="img_box"
+            style="background-image: url(imgs/tool6.png)"
+          ></div>
+          <ul class="main_card_list">
+            <li class="content">
+              <p class="title">Voice Assistant SDK</p>
+              <p class="text">
+                通過語音控制應用程式、設備，實現多種功能，例如播放音樂、查詢天氣、發送信息等。
+              </p>
+            </li>
+            <li class="creator">
+              <p class="title">AI 模型</p>
+              <p class="person_name">杰杰</p>
+            </li>
+            <li class="type">
+              <p class="title">#生產力</p>
+              <a href="javascript:;"><img src="icons/share.png" /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="pagination_box">
+        <!-- <a href="javascript:;" class="up"
+          ><img src="icons/keyboard arrow right.png" /></a> -->
+        <a href="javascript:;" class="focus">1</a><a href="javascript:;">2</a
+        ><a href="javascript:;">3</a><a href="javascript:;">4</a
+        ><a href="javascript:;">5</a
+        ><a href="javascript:;"><img src="icons/keyboard arrow right.png" /></a>
+      </div>
+    </main>
+    <footer>
+      <div class="start_box price_hidden">
+        <h2>現在就來建立<br />屬於你的服務吧</h2>
+        <button class="btn">開始使用<img src="icons/call made.png" /></button>
+      </div>
+
+      <div class="moses_area price_show flex">
+        <p class="information_title">常見問題</p>
+        <ul class="question_list">
+          <li>
+            <a href="javascript:;">
+              <p class="title">如何選擇適合的AI模型？</p>
+              <p class="content">
+                選擇適合的 AI
+                模型需要考慮您的應用場景、需要解決的問題、可用的資源以及預算等因素。可以通過對比不同模型的性能、準確率、速度等指標，以及與其他用戶的評價與反饋，來選擇最適合的模型。
+              </p>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:;">
+              <p class="title">租用模型的費用是如何計算的？</p>
+              <p class="content">
+                租用模型的費用通常會根據模型的性能和使用時間等因素進行計算。具體而言，模型的性能可以根據其精度、速度、暫用資源等指標來評估；而使用時間可以根據租用時間的長短來計算，通常會按小時、天或月來計算。綜合考慮這些因素，系統會自動算出對應的租用費用。
+              </p>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:;">
+              <p class="title">如何進行付款？</p>
+              <p class="content">
+                付款方式可以通過網站上提供的宴上支付平台進行支付。具體而言，您可以選擇信用卡、銀行轉帳電子錢包等不同的支付方式進行支付。在支付前，您需要先登錄網站並選擇適合的租用方案，系統會自動計算出對應的租用欸用和支付金額，然後您可以選擇適合的支付方式進行支付。完成支付後，系統會自動向您提供相應的服務。
+              </p>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:;">
+              <p class="title">租用模型的期限是多久？</p>
+              <p class="content">
+                租用模型的期限可以根據您的需求進行設置，通常可以選擇幾個小時、幾天或幾個月等不同的時間段。
+              </p>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:;">
+              <p class="title">如何進行付款？</p>
+              <p class="content">
+                如果在使用過程中遇到問題，您可以聯繫惡扶或技術支持人員進行諮詢或報告問題。您也可以。您也可以通過網站上的幫助中心或社區論壇尋找相關的解決方案和回答。
+              </p>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer_tool_box">
+        <div class="footer_tool_link">
+          <a href="javascript:;" onclick="mainPage(false)">首頁</a
+          ><a href="javascript:;" onclick="mainPage(true)">定價</a>
+        </div>
+        <img src="imgs/logo.png" />
+      </div>
+      <div class="footer_link_box">
+        <div class="page_link">
+          <p>AI工具王 © 2023</p>
+          <a href="javascript:;">Facebook</a><a href="javascript:;">Twitter</a
+          ><a href="javascript:;">Instagram</a>
+        </div>
+        <a href="missionTwo.html#nav" class="to_top"
+          >Back to top<img src="icons/arrow upward.png"
+        /></a>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.js"
+      integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      $(function(){
+        $(".question_list .content").slideUp()
+      })
+
+      function navEvent() {
+        $(".hamburger").toggleClass("focus")
+        $(".nav_link_box").toggleClass("focus")
+      }
+
+      function mainPage(isPrice) {
+        isPrice ? $("body").addClass("price") : $("body").removeClass("price");
+      }
+
+      $(".question_list a").click(function(){
+        $(this).parent().toggleClass("focus")
+        $(this).find(".content").slideToggle()
+      })
+    </script>
+  </body>
+</html>
